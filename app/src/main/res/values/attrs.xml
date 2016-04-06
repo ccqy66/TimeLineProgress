@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TimeLineProgress">
+        <attr name="reachColor" format="color"/>
+        <attr name="unReachColor" format="color"/>
+        <attr name="clockIconColor" format="color"/>
+        <attr name="stopColor" format="color"/>
+        <attr name="clockWidth" format="dimension"/>
+        <attr name="timePositionWidth" format="dimension"/>
+        <attr name="subTimePostionWidth" format="dimension"/>
+    </declare-styleable>
+</resources>
