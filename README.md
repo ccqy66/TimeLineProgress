@@ -1,8 +1,8 @@
-####TimeLineProgress
-###简介
+#### TimeLineProgress
+### 简介
 一个可以作为时间线所使用的库，使用起来超级简单，但是效果却是很棒的，你可以用在计划表，并支持二级阶段计划。你也可以用作招聘进度，并可以细粒化的指示当前阶段。总之它有很广的应用场景。本库的灵感来源于阿里巴巴的实习生招聘的后台进度条，想着如果能在手机端有一个类似的功能块的话，一定是不错的，所以花了两天的时间绘制了出来。在实现的过程中，我尽力的解决了所遇到的BUG，但是使用过程中也难免遇到一些其他的问题，欢迎指出。
 ![](https://github.com/ccqy66/TimeLineProgress/blob/master/Art/art.png)
-###如何使用
+### 如何使用
 - 首先引入TimeLineProgress.java到你的项目中，并导入自定义属性文件。
 - 在xml文件中导入之
 ```
@@ -46,9 +46,9 @@
         subTimePositionMsg.add(null);
         subTimePositionMsg.add(list3);
 ```
-######NOTICE:如何某个时间点没有二级时间点，就令其为null，不能省略不写
+###### NOTICE:如何某个时间点没有二级时间点，就令其为null，不能省略不写
 
-###更换状态
+### 更换状态
 - 实际上，上面的步骤已经可以生成一个时间线进度条了，但是为了能指示时间线当前所处的位置，你还需要调用`setCurrentStatus(index,subIndex)`来指示当前的位置。
 如我想让当前位置处于，面试下的笔试状态。下标是从0开始的
 ```
@@ -60,7 +60,7 @@ progress.setCurrentStatus(2,1);
 progress.setStop(2);
 ```
 
-###自定义属性
+### 自定义属性
 ```
 		<attr name="reachColor" format="color"/> 到达部分的颜色
         <attr name="unReachColor" format="color"/> 未到达部分的颜色
